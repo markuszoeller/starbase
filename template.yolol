@@ -1,0 +1,38 @@
+// name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================== <- 70 chars
+
+<name> chip
+  <description>
+
+Basic/Advanced/Professional Chip:
+  :<wait>   The wait for this chip
+
+Devices:
+  :<name>   Description of this device field
+
+Memory Card:
+  :<name>   Description of this device field on a memory card
+
+Lines:
+  1:      Description of this line
+  2:      Description of this line
+  3:      Description of this line
