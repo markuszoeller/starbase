@@ -1,0 +1,51 @@
+// Auto-Pilot
+dm=2000 w=50 n="\n"
+
+IF :autoPilot==0 THEN GOTO4 END IF :dp<dm THEN GOTO18 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+:fcuforward=0 :fcub=100 :autoPilot=0 :apwt=w
+:fcub=0 GOTO2
+
+====================================================================== <- 70 chars
+
+Auto-Pilot chip
+  When enabling the :autoPilot button, fly to the target and stop when close.
+
+Advanced Chip:
+  :apwt     The wait for this chip
+
+Devices:
+  :_d       A debug text field
+
+Memory Card:
+  :dp       The distance to the target, calculated by the ETA chip
+  :posx1    X-coordinate of Point of Interest 1 stored by the POI chip
+  :posy1    Y-coordinate of Point of Interest 1 stored by the POI chip
+  :posz1    Z-coordinate of Point of Interest 1 stored by the POI chip
+  :posx1    X-coordinate of Point of Interest 2 stored by the POI chip
+  :posy1    Y-coordinate of Point of Interest 2 stored by the POI chip
+  :posz1    Z-coordinate of Point of Interest 2 stored by the POI chip
+  x:        X-coordinate of the current position calculated by ISAN
+  y:        Y-coordinate of the current position calculated by ISAN
+  z:        Z-coordinate of the current position calculated by ISAN
+
+Lines:
+  2:      dm == Distance to target when stopping begins; w == 0.2 * 5 * 10 (10s wait time)
+  4:      If the distance to the target is below 2000m, go to the break behavior
+  18:     Stop the ship; pump the breaks; disable the auto-pilot button; wait for 10s
+  19:     Disable the backwards thrusters; go to the beginning
+
+
+
